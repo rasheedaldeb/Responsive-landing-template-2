@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    width: 100vw;
+    display: flex;
+    height: 84px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.2489vw;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px black;
+    z-index: 2;
+}
+nav img {
+    width: 170px;
+}
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+nav ul a:hover {
+    color: rgba(0, 0, 0, 50%);
+}
+nav .sign  {
+    width: 145px;
+    height: 45px;
+    background-color: rgb(39, 174, 96);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+nav .nav-menu {
+    background: none;
+    border: 1px solid rgb(39, 174, 96) ;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+nav .nav-menu i {
+    color:rgb(39, 174, 96)  ;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+.hero .info {
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .info h1 {
+    line-height:70px;
+    font-size: 4rem;
+    width: 100%;
+}
+.Featured {
+    background-color: #f7f9fc;
+    padding: 100px 0;
+}
+.Featured h1 , .recent h1, .Explore h1 {
+    max-width: max-content;
+    margin: 0 auto;
+    font-size: 2.3rem;
+}
+.container {
+    max-width: 1300px;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.Featured .container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px gray;
+}
+.Featured .container .card h3 {
+    font-size: 1.3rem;
+}
+section .container .card img {
+    width: 70px;
+}
+.recent {
+    padding: 100px 0 ;
+}
+.recent .container {
+    gap: 60px;
+}
+.recent .card {
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 5px;
+}
+.recent .container .card  img {
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+}
+.recent .container .card h2 {
+    font-size: 1.3rem;
+    margin:  20px;
+}
+.recent .container .card .end {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(201, 200, 200);
+    padding: 15px 20px;
+}
+.recent  .end .price span {
+    border-radius: 20px;
+    background-color: rgb(39, 174, 96);
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+}
+.Explore .container {
+    max-width: 1300px;
+    gap: 50px;
+}
+.Explore .container .card {
+    position: relative;
+    width: 350px;
+    overflow: hidden;
+}
+.Explore .container .card  img {
+    width: 100%;
+    border-radius: 5px;
+}
+.Explore .container .card .after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(183, 186, 192, 0.3);
+    font-size: 18px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: 0.5s all ;
+}
+.Explore .container .card:hover .after {
+    transform: translateY(0);
+}
+.Explore .container .card h2 {
+    width: 300px;
+    position: absolute;
+    top:55%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+    color: white;
+    font-size: 1.25rem;
+}
+footer {
+    height: 65px;
+    background-color: #1d2636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    font-size: 1.3rem;
+}
+@media screen and (max-width:992px) {
+    html {
+        font-size: 10px;
+    }
+    nav .nav-menu {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav .sign {
+        width: 10.6149vw;
+        min-width: 70px;
+    }
+    nav img {
+        width: 100px;
+    }
+}
